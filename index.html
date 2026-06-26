@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Théo faz 2 anos</title>
+    <meta
+      name="description"
+      content="Convite do aniversário de 2 anos do Théo, dia 25 de julho de 2026, no Sussukinha Buffet Infantil."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="intro-active">
+    <div class="race-loader" id="race-loader" aria-live="polite">
+      <div class="terminal-loader" aria-label="Carregando convite">
+        <div class="terminal-top">
+          <span></span>
+          <span></span>
+          <span></span>
+          <strong>grid-init.exe</strong>
+        </div>
+        <div class="terminal-lines">
+          <p>&gt; carregando convite_theo.exe</p>
+          <p>&gt; calibrando pista...</p>
+          <p>&gt; chamando convidados...</p>
+          <p>&gt; motores prontos.</p>
+        </div>
+      </div>
+
+      <div class="start-sequence" aria-label="Semáforo de largada">
+        <p>Largada em</p>
+        <div class="light-board" aria-hidden="true">
+          <span class="race-light red-light light-1"></span>
+          <span class="race-light red-light light-2"></span>
+          <span class="race-light red-light light-3"></span>
+          <span class="race-light green-light"></span>
+        </div>
+        <strong>Vai!</strong>
+      </div>
+    </div>
+
+    <main class="invite">
+      <section class="hero" aria-labelledby="titulo">
+        <div class="race-strip" aria-hidden="true"></div>
+        <div class="hero-copy">
+          <p class="eyebrow">Convite especial</p>
+          <h1 id="titulo">Théo faz 2 anos</h1>
+          <p class="lede">Preparem os motores para comemorar com a gente.</p>
+        </div>
+
+        <div class="video-stage">
+          <video
+            class="invite-video"
+            src="./assets/convite-theo.mp4"
+            poster="./assets/convite-poster.jpg"
+            autoplay
+            controls
+            muted
+            playsinline
+            preload="auto"
+          ></video>
+          <button class="sound-toggle" id="sound-toggle" type="button">Ativar som</button>
+        </div>
+
+        <div class="quick-facts" aria-label="Resumo da festa">
+          <div>
+            <span>Data</span>
+            <strong>25/07/2026</strong>
+          </div>
+          <div>
+            <span>Horário</span>
+            <strong>13h às 17h</strong>
+          </div>
+          <div>
+            <span>Confirme até</span>
+            <strong>18/07/2026</strong>
+          </div>
+        </div>
+
+        <button class="scroll-cue" type="button" aria-label="Ver detalhes da festa">
+          <span class="scroll-track" aria-hidden="true">
+            <span class="scroll-car"></span>
+          </span>
+          <span>Ver detalhes</span>
+        </button>
+      </section>
+
+      <section class="details" aria-labelledby="detalhes">
+        <div class="section-head">
+          <p class="eyebrow">Pit stop da alegria</p>
+          <h2 id="detalhes">A festa</h2>
+        </div>
+
+        <div class="detail-grid">
+          <article class="detail-item">
+            <span class="marker">01</span>
+            <h3>Quando</h3>
+            <p>Sábado, 25 de julho de 2026, das 13h às 17h.</p>
+          </article>
+          <article class="detail-item">
+            <span class="marker">02</span>
+            <h3>Onde</h3>
+            <p>Sussukinha Buffet Infantil, Estr. da Água Grande, 606 - Irajá, Rio de Janeiro - RJ.</p>
+          </article>
+          <article class="detail-item">
+            <span class="marker">03</span>
+            <h3>Confirmação</h3>
+            <p>Leandro e Marta pedem confirmação até 18 de julho.</p>
+          </article>
+        </div>
+
+        <div class="actions" aria-label="Ações do convite">
+          <a
+            class="action primary"
+            id="whatsapp-link"
+            href="https://api.whatsapp.com/send?phone=5521992600261&text=Oi%2C%20Leandro%20e%20Marta!%20Confirmo%20presen%C3%A7a%20no%20anivers%C3%A1rio%20do%20Th%C3%A9o.%0A%0ANome%3A%0AAdultos%3A%0ACrian%C3%A7as%3A"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Confirmar no WhatsApp
+          </a>
+          <a
+            class="action secondary"
+            href="https://www.google.com/maps/search/?api=1&query=Sussukinha%20Buffet%20Infantil%20Estr.%20da%20%C3%81gua%20Grande%20606%20Iraj%C3%A1%20Rio%20de%20Janeiro%20RJ"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Abrir localização
+          </a>
+        </div>
+      </section>
+
+      <section class="gallery" aria-label="Fotos do Théo">
+        <div class="carousel" aria-hidden="true">
+          <div class="carousel-track">
+            <img src="./assets/theo-sorrindo.jpeg" alt="" />
+            <img src="./assets/theo-piloto.jpeg" alt="" />
+            <img src="./assets/theo-brasil.jpeg" alt="" />
+            <img src="./assets/theo-sorrindo.jpeg" alt="" />
+            <img src="./assets/theo-piloto.jpeg" alt="" />
+            <img src="./assets/theo-brasil.jpeg" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="finish" aria-labelledby="final">
+        <div>
+          <p class="eyebrow">Linha de chegada</p>
+          <h2 id="final">Esperamos você</h2>
+          <p>
+            Com carinho,<br />
+            Leandro e Marta
+          </p>
+        </div>
+        <p class="countdown" id="countdown" aria-live="polite"></p>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
