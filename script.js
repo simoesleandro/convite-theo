@@ -1,14 +1,26 @@
+const googleFormUrl = "";
 const phone = "5521992600261";
 const message = [
-  "Oi, Leandro e Marta! Confirmo presença no aniversário do Théo.",
+  "Oi, Leandro e Marta! Tenho uma dúvida sobre o aniversário do Théo.",
   "",
-  "Nome:",
-  "Adultos:",
-  "Crianças:"
+  "Nome:"
 ].join("\n");
 
+const rsvpLink = document.querySelector("#rsvp-link");
 const whatsappLink = document.querySelector("#whatsapp-link");
 const whatsappUrl = `https://api.whatsapp.com/send?phone=${phone}&text=${encodeURIComponent(message)}`;
+
+if (rsvpLink && googleFormUrl) {
+  rsvpLink.href = googleFormUrl;
+} else if (rsvpLink) {
+  rsvpLink.href = `https://api.whatsapp.com/send?phone=${phone}&text=${encodeURIComponent([
+    "Oi, Leandro e Marta! Confirmo presença no aniversário do Théo.",
+    "",
+    "Nome:",
+    "Adultos:",
+    "Crianças:"
+  ].join("\n"))}`;
+}
 
 if (whatsappLink) {
   whatsappLink.href = whatsappUrl;

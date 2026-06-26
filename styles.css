@@ -645,11 +645,16 @@ h3 {
 }
 
 .action.primary {
+  background: var(--yellow);
+  color: var(--ink);
+}
+
+.action.secondary {
   background: #25d366;
   color: #06140b;
 }
 
-.action.secondary {
+.action.tertiary {
   border: 2px solid var(--white);
   background: rgba(255, 255, 255, 0.08);
 }
@@ -771,7 +776,7 @@ h3 {
   }
 
   .actions {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .finish {
